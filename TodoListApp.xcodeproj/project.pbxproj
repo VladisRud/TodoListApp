@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		587952AC2C0B5E9F00590A0D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587952AB2C0B5E9F00590A0D /* StorageManager.swift */; };
 		A86CD1212AC0A2EB00386984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86CD1202AC0A2EB00386984 /* AppDelegate.swift */; };
 		A86CD1232AC0A2EB00386984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86CD1222AC0A2EB00386984 /* SceneDelegate.swift */; };
 		A86CD1252AC0A2EB00386984 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86CD1242AC0A2EB00386984 /* TaskListViewController.swift */; };
 		A86CD12B2AC0A2EB00386984 /* TodoListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A86CD1292AC0A2EB00386984 /* TodoListApp.xcdatamodeld */; };
 		A86CD12D2AC0A2EC00386984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A86CD12C2AC0A2EC00386984 /* Assets.xcassets */; };
 		A86CD1302AC0A2EC00386984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86CD12E2AC0A2EC00386984 /* LaunchScreen.storyboard */; };
-		A86CD1382AC0A84500386984 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86CD1372AC0A84500386984 /* NewTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		587952AB2C0B5E9F00590A0D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A86CD11D2AC0A2EB00386984 /* TodoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86CD1202AC0A2EB00386984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A86CD1222AC0A2EB00386984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		A86CD12C2AC0A2EC00386984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A86CD12F2AC0A2EC00386984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A86CD1312AC0A2EC00386984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A86CD1372AC0A84500386984 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		587952AD2C0DD9BE00590A0D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A86CD1242AC0A2EB00386984 /* TaskListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		587952AE2C0DD9DB00590A0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A86CD1292AC0A2EB00386984 /* TodoListApp.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		587952AF2C0DD9ED00590A0D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				587952AB2C0B5E9F00590A0D /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		587952B02C0DDA0500590A0D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A86CD1202AC0A2EB00386984 /* AppDelegate.swift */,
+				A86CD1222AC0A2EB00386984 /* SceneDelegate.swift */,
+				A86CD1312AC0A2EC00386984 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		A86CD1142AC0A2EB00386984 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +92,12 @@
 		A86CD11F2AC0A2EB00386984 /* TodoListApp */ = {
 			isa = PBXGroup;
 			children = (
-				A86CD1202AC0A2EB00386984 /* AppDelegate.swift */,
-				A86CD1222AC0A2EB00386984 /* SceneDelegate.swift */,
-				A86CD1242AC0A2EB00386984 /* TaskListViewController.swift */,
-				A86CD1372AC0A84500386984 /* NewTaskViewController.swift */,
-				A86CD12C2AC0A2EC00386984 /* Assets.xcassets */,
+				587952AE2C0DD9DB00590A0D /* Model */,
+				587952AD2C0DD9BE00590A0D /* ViewController */,
+				587952AF2C0DD9ED00590A0D /* Services */,
+				587952B02C0DDA0500590A0D /* App */,
 				A86CD12E2AC0A2EC00386984 /* LaunchScreen.storyboard */,
-				A86CD1312AC0A2EC00386984 /* Info.plist */,
-				A86CD1292AC0A2EB00386984 /* TodoListApp.xcdatamodeld */,
+				A86CD12C2AC0A2EC00386984 /* Assets.xcassets */,
 			);
 			path = TodoListApp;
 			sourceTree = "<group>";
@@ -141,8 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A86CD1252AC0A2EB00386984 /* TaskListViewController.swift in Sources */,
-				A86CD1382AC0A84500386984 /* NewTaskViewController.swift in Sources */,
 				A86CD1212AC0A2EB00386984 /* AppDelegate.swift in Sources */,
+				587952AC2C0B5E9F00590A0D /* StorageManager.swift in Sources */,
 				A86CD1232AC0A2EB00386984 /* SceneDelegate.swift in Sources */,
 				A86CD12B2AC0A2EB00386984 /* TodoListApp.xcdatamodeld in Sources */,
 			);
@@ -290,7 +322,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TodoListApp/Info.plist;
+				INFOPLIST_FILE = TodoListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -321,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TodoListApp/Info.plist;
+				INFOPLIST_FILE = TodoListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
